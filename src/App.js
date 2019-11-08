@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Login from './components/auth/Login'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+//REDUX
+//STORE Y PROVIDER
+import store from './REDUX/store';
+import { Provider } from 'react-redux';
+
+//Para redirigir al usuario en función de si está autenticado
+import { UserIsAuthenticated, UserIsNotAuthenticated } from './HELPERS/auth';
+
+//COMPONENTES
+import Clinica from './components/Clinica';
+import Profesionales from './components/Profesionales';
+import Servicios from './components/Servicios';
+//NavBar
+import Navbar from './components/LAYOUT/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Navbar/>
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={UserIsNotAuthenticated(Clinica)}/>
+            <Route exact path="/servicios" component={UserIsAuthenticated(Servicios)} />
+            <Route exact path="/profesionales" component={UserIsAuthenticated(Profesionales)} />
+            <Route exact path="/login" component={UserIsNotAuthenticated(Login)}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </Provider>
+    
   );
 }
 
