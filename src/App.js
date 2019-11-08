@@ -23,7 +23,7 @@ function App() {
         <Navbar/>
         <div className="container">
           <Switch>
-            <Route exact path="/" component={UserIsNotAuthenticated(Clinica)}/>
+            <Route exact path="/" component={UserIsAuthenticated(Clinica)}/>
             <Route exact path="/servicios" component={UserIsAuthenticated(Servicios)} />
             <Route exact path="/profesionales" component={UserIsAuthenticated(Profesionales)} />
             <Route exact path="/login" component={UserIsNotAuthenticated(Login)}/>
