@@ -30,12 +30,12 @@ class Login extends Component {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-12 col-lg-6 m-1">
-                    <div class="card border-primary my-3">
+                    <div class="card border-secondary my-3">
                         <div class="card-header text-center"><i className="fas fa-lock"></i> LOGIN</div>
                             <div class="card-body">
                                 <form name="login" onSubmit={this.validar}>
                                     <div className="form-group">
-                                        <label htmlFor="email"><span className="font-weight-bold">E-mail: </span></label>
+                                        <label htmlFor="email"><span className="font-weight-bold">E-mail : </span></label>
                                         <input 
                                             type="text" 
                                             id="email" 
