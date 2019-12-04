@@ -1,7 +1,7 @@
 import React, { Component, Fragment} from 'react';
 import axios from 'axios';
 import MiAlert from './MiAlert';
-import Map from './Map';
+
 
 class Contacto extends Component {
     state = { 
