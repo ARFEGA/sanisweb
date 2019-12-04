@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+//Variables colores app
+
+$principal:#033C73;
+$secundario:#e9ecef;
+$warning:#DD5600;
+$texto:#343a40;
+
+
+
+html,
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+//Tipografía
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $texto;
+    transition: all .5s ease;
+    background: linear-gradient(45deg,
+            rgba(42, 27, 161, 1),
+            rgba(29, 210, 177, 1) 100%) !important;
+}
+
+.seccion-arriba-contacto {
+
+    .eslogan,
+    .esloganSub {
+        background-color: black;
+        animation-delay: slow;
+        animation-name: zoomIn;
+
+    }
+}
+
+
+
+//CONTACTO
+
+.seccion-arriba-contacto {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/contacto-manos.jpg") no-repeat center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh; //100% de la vista
+    transition: all .8s ease;
+}
+
+.capa-translucida {
+    background: linear-gradient(45deg,
+            rgba(42, 27, 161, .4),
+            rgba(29, 210, 177, .4) 100%) !important;
+}
+
+.capa-translucida-boton {
+    background: linear-gradient(45deg,
+            rgba(42, 27, 161, .7),
+            rgba(29, 210, 177, .7) 100%) !important;
+}
+
+h1 {
+
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.mi-boton {
+    //transition: all .3s ease-in-out;
+    padding: .2rem;
+    display: inline-flex;
+    height: 40px;
+    width: 110px;
+    border: 1px solid white;
+    margin: 10px 10px 10px 10px;
+    color: $principal;
+
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mi-boton:hover {
+    border-radius: 50px;
+    border: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#effect-button {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+#effect-button a {
+    position: relative;
+    text-decoration: none;
+    transition: all .45s ease-Out;
+    font-weight: bold;
+}
+
+#circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 1)60%,
+            rgba(29, 210, 177, 1));
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+#effect-button:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+
+}
+
+
+#effect-button:hover a,
+#effect-button:hover button {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.imgClinica {
+    height: 85vh !important;
+    padding: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgClinica:before {
+    content: "";
+    position: absolute;
+    background: black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+}
+
+//Para oscurecer imagen
+.imgAparatologia:before {
+    content: "";
+    position: absolute;
+    background: black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+}
+
+.imgAparatologia {
+    height: 65vh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-container-cube {
+    height: 100%;
+}
+
+.swiper-slide {}
+
+
+
+.btn-toolbar {
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.4rem 1.5rem;
+    font-weight: bold;
+    transition: all 3sec ease-in-out;
+}
+
+
+.btn-toolbar:hover {
+    color: whitesmoke;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 1)70%,
+            rgba(29, 210, 177, 1));
+    border: none;
+}
+
+//Estilos redes sociales
+
+#social-net-bar {
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 1)70%,
+            rgba(29, 210, 177, 1));
+}
+
+
+.redes-sociales i {
+    color: $secundario;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    opacity: .6;
+    transition: all .3s ease-in-out;
+}
+
+.redes-sociales i:hover {
+    opacity: 1;
+    //transform: scale(1.3) rotate(360deg);
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    // background-color: red;
+    color: black;
+    font-weight: bold;
+
+    //font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: .5rem;
+    border-radius: .5rem;
+    display: flex;
+
+}
+
+/* .navbar-dark .navbar-nav .nav-link:after {
+
+    font-family: 'Font Awesome 5 Free';
+    content: "\f054";
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-justify: right;
+    transition: all .5s ease;
+} */
+
+/* .navbar-dark .navbar-nav .nav-link:hover:after {
+    transform: rotateZ(180deg);
+} */
+
+#SwiperClinica .swiper-pagination-bullets {
+    margin-top: auto;
+    margin-bottom: 5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: white !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.swiper-button-next::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0a9";
+    font-weight: bold;
+    font-size: 3rem;
+    text-justify: left;
+    opacity: .4;
+    transition: all .5s ease;
+}
+
+.swiper-button-prev::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0a8";
+    font-weight: bold;
+    font-size: 3rem;
+    text-justify: right;
+    opacity: .4;
+    transition: all .5s ease;
+}
+
+
+//<i class="fas fa-times"></i> //_____________________________
+//f00d
+//MEDIAS QUERIES
+
+@media(min-width:768px) {
+    .navbar-dark .navbar-nav .nav-link:after {
+        content: "";
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        border-radius: 1.5rem;
+    }
+
+}
+
+//MainPage
+
+#apppage .gradient {
+
+    background: linear-gradient(45deg,
+            rgba(42, 27, 161, .7),
+            rgba(29, 210, 177, .7) 100%);
+}
+
+#apppage .view {
+    background-image: url("../images/fondo_sanis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+#apppage h6 {
+    line-height: 1.7;
+}
+
+@media only screen and (max-width: 400px) {
+    #apppage .animated img {
+        max-height: 50vh;
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #apppage .animated img {
+        max-height: 35vh;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    #apppage .animated img {
+        max-height: 50vh;
+        transform: translateX(-50%);
+        left: 50%;
+        position: relative;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    #apppage .view {
+        min-height: 150vh;
+    }
+}

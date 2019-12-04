@@ -5,17 +5,33 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    
+
+
+
+
+
       <!-- FAVICON-->
       <link rel="shortcut icon" type="image/png" href="images/favicon.png">
       <!-- CSS de bootstrap -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/cerulean.bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
       <!-- Font Awesome-->
       <link rel="stylesheet" href="css/all.css">
-      <meta
+      <!-- Swiper -->
+      <link rel="stylesheet" href="css/swiper.min.css">
 
-      name="description"
-      content="La web de fisioterapia en Velilla de San Antonio"
-    />
+      <!-- Custom styles -->
+      <link rel="stylesheet" href="css/estilos.css">
+      <!-- Cookies-->
+      <link rel="stylesheet" type="text/css"
+         href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+      <meta
+        name="description"
+        content="SANIS tus fisioterapeutas en Velilla de San Antonio"
+      />
     
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -31,11 +47,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>SANIS</title>
+    <title>SANIS Fisioterapia</title>
   </head>
-  <body>
+  <body class="bg-light">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
+     <!--  <script type="text/javascript">
+        var d = new Date();
+        document.write('Fecha: ' + d.getDate(), '<br>Dia de la semana: ' + d.getDay(), '<br>Mes (0 al 11): ' + d.getMonth(), '<br>Año: ' + d.getFullYear(), '<br>Hora: ' + d.getHours(), '<br>Hora UTC: ' + d.getUTCHours(), '<br>Minutos: ' + d.getMinutes(), '<br>Segundos: ' + d.getSeconds());
+      </script> -->
 
     </div>
     <!--
@@ -48,11 +68,40 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+   
     <!-- Carga jQuery -->
     <script src="./js/jquery-3.4.1.min.js"></script>
+   
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <!-- Carga popper-->
     <script src="./js/popper.min.js"></script>
     <!-- Carga bootstrap js-->
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/swiper.min.js"></script>
+    <!-- Google maps-->
+    <!-- <script type="text/javascript" src="https://maps.google.com/maps/api/js"></script> -->
+   <!-- Comunicado cookies -->
+   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-left",
+      "content": {
+        "message": "Utilizamos cookies propias y de terceros para mejorar su experiencia de usuario. Si continúa utilizando nuestro sitio web, acepta el uso que hacemos de las cookies. ",
+        "dismiss": "Permitir!",
+        "link": "Saber más.",
+        "href": "cookies.html"
+      }
+    });
+  </script>
   </body>
 </html>

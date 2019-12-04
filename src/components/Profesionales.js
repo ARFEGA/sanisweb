@@ -1,7 +1,12 @@
 import React from 'react'
+import Swiper3d  from './Swipers/Swiper3d';
 
 const Profesionales = () => {
-    return ( <h1>Profesionale</h1> );
+    return ( 
+     
+           <Swiper3d/>
+       
+    );
 }
  
 export default Profesionales;

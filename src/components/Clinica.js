@@ -1,8 +1,8 @@
 import React from 'react'
+import SwiperClinica from './Swipers/SwiperClinica';
 
-
-const Clinica = () => {
-    return ( <h1>CLINICA</h1> );
-}
  
+const Clinica = () => {
+    return (<SwiperClinica/>)
+}
 export default Clinica;

@@ -29,14 +29,16 @@ class Login extends Component {
         return (
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-12 col-lg-6 m-1">
+                <div className="col-12 col-lg-8 m-1">
                     <div class="card border-secondary my-3">
                         <div class="card-header text-center"><i className="fas fa-lock"></i> LOGIN</div>
                             <div class="card-body">
-                                <form name="login" onSubmit={this.validar}>
+                                <form name="login" onSubmit={this.validar} >
                                     <div className="form-group">
-                                        <label htmlFor="email"><span className="font-weight-bold">E-mail : </span></label>
-                                        <input 
+                                        <label htmlFor="email" className="sr-only"><span className="font-weight-bold">E-mail : </span></label>
+                                        <div className="input-group">
+                                            <div className="input-group-prepend"><span className="input-group-text"><i className="fa fa-user"></i></span></div>
+                                            <input 
                                             type="text" 
                                             id="email" 
                                             className="form-control"
@@ -44,21 +46,27 @@ class Login extends Component {
                                             onChange={this.leerDatos} 
                                             aria-describedby="ayuda-email"
                                             name="email" />
+                                        </div>
+                                        
                                         <small className="form-text text-mute" id="ayuda-email">Introduce tu e-mail asociado a tu cuenta.</small>
                                         
-                                        <label htmlFor="password"><span className="font-weight-bold">Contraseña: </span></label>
-                                        <input 
-                                            type="password" 
-                                            id="password" 
-                                            className="form-control" 
-                                            name="password" 
-                                            required
-                                            onChange={this.leerDatos} 
-                                            aria-describedby="ayuda-contraseña"/>
+                                        <label htmlFor="password" className="sr-only"><span className="font-weight-bold">Contraseña: </span></label>
+                                        <div className="input-group">
+                                            <div className="input-group-prepend"><span className="input-group-text"><i class="fas fa-unlock-alt"></i></span></div>
+                                            <input 
+                                                type="password" 
+                                                id="password" 
+                                                className="form-control" 
+                                                name="password" 
+                                                required
+                                                onChange={this.leerDatos} 
+                                                aria-describedby="ayuda-contraseña"/>                       
+                                        </div>
+                                       
                                         <small className="form-text text-mute" id="ayuda-contraseña">Mínimo 6 caracteres.</small>
                                     </div>
                                     <div className="form-group">
-                                        <input  type="Submit" className="bn btn-primary btn-block" value="Login"/>
+        <button  type="Submit" className="bn btn-primary btn-block"><i class="fas fa-sign-in-alt fa-2x"></i></button>
                                     </div>
                                 </form>
                             </div>
