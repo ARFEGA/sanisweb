@@ -101,9 +101,9 @@ const Aparatologia = () => {
                      </div>
                  </div>
                    </div>
-                   <div className="imgAparatologia col-6 d-flex justify-content-center align-items-center" style={{ backgroundImage:"url('../images/equipo6.jpg')"}}>
-                     <div className="container">
-                     <div className="row">
+                     <div className="imgAparatologia col-6 d-flex justify-content-center align-items-center" style={{ backgroundImage:"url('../images/equipo6.jpg')"}}>
+                        <div className="container">
+                        <div className="row">
                          <div className="col-12">
                              <h2 className="display-6 font-weight-bold text-light">
                                  Podología
@@ -111,12 +111,11 @@ const Aparatologia = () => {
                               <div class="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
                                     <a href="#!">Pies saludables</a>
-                            </div>
-                            
+                            </div>  
                         </div>
                      </div>
                  </div>
-                   </div>
+                </div>
       </Swiper>
       </div>
     )

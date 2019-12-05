@@ -2,8 +2,7 @@
 html,
 body {
   position: relative;
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
 
 html {
   font-family: 'Raleway', sans-serif;
@@ -18,6 +17,17 @@ body {
   transition: all .5s ease;
   background: linear-gradient(45deg, #2a1ba1, #1dd2b1 100%) !important; }
 
+.profesionales-swiper-container {
+  width: 40%;
+  height: 30%;
+  position: absolute;
+  left: 30%;
+  top: 20%; }
+
+.profesionales-swiper-slide {
+  background-position: center;
+  background-size: cover; }
+
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0; }
@@ -29,6 +39,20 @@ body {
     opacity: 0; }
   to {
     opacity: 2; } }
+.titulo {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  font-weight: bold; }
+
+.titulo .tituloPlus {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  font-weight: bold; }
+
 .ruta {
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, black), to(#1dd2b1));
   background: linear-gradient(90deg, black 60%, #1dd2b1);
@@ -270,12 +294,46 @@ a {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
+@media (max-width: 768px) {
+  .titulo {
+    font-size: xx-large !important; }
+
+  span .tituloPlus {
+    font-size: xx-large !important;
+    opacity: .3; } }
 @media (min-width: 768px) {
   .navbar-dark .navbar-nav .nav-link:after {
     content: ""; }
 
   .navbar-dark .navbar-nav .nav-link {
-    border-radius: 1.5rem; } }
+    border-radius: 1.5rem; }
+
+  .eslogan {
+    font-size: 4rem !important; }
+
+  .esloganSub {
+    font-size: 2rem !important;
+    letter-spacing: .3rem; }
+
+  .tituloInicio {
+    font-size: 6rem !important;
+    letter-spacing: .2rem; }
+
+  .tituloInicio .tituloPlus {
+    padding: 1rem;
+    letter-spacing: 1rem;
+    font-size: 8rem !important;
+    opacity: .8; }
+
+  .titulo {
+    font-size: 4rem !important;
+    letter-spacing: .2rem; }
+
+  .titulo .tituloPlus {
+    padding: 1rem;
+    letter-spacing: 1rem;
+    font-size: 6rem !important;
+    opacity: .8; } }
 #apppage .gradient {
   background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%); }
 

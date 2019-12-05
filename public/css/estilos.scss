@@ -13,7 +13,7 @@ html,
 body {
     position: relative;
     height: 100%;
-    width: 100%;
+
 }
 
 //Tipografía
@@ -33,6 +33,25 @@ body {
             rgba(29, 210, 177, 1) 100%) !important;
 }
 
+//PROFESIONALES
+
+.profesionales-swiper-container {
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    
+
+}
+
+.profesionales-swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+
+
 //CONTACTO
 
 
@@ -45,6 +64,18 @@ body {
     to {
         opacity: 2;
     }
+}
+
+.titulo {
+    animation-duration: 3s;
+    animation-name: zoomIn;
+    font-weight: bold;
+}
+
+.titulo .tituloPlus {
+    animation-duration: 3s;
+    animation-name: zoomIn;
+    font-weight: bold;
 }
 
 .ruta {
@@ -354,6 +385,16 @@ a {
 //<i class="fas fa-times"></i> //_____________________________
 //f00d
 //MEDIAS QUERIES
+@media(max-width:768px) {
+    .titulo {
+        font-size: xx-large !important;
+    }
+
+    span .tituloPlus {
+        font-size: xx-large !important;
+        opacity: .3;
+    }
+}
 
 @media(min-width:768px) {
     .navbar-dark .navbar-nav .nav-link:after {
@@ -363,6 +404,41 @@ a {
     .navbar-dark .navbar-nav .nav-link {
         border-radius: 1.5rem;
     }
+
+    .eslogan {
+        font-size: 4rem !important;
+    }
+
+    .esloganSub {
+        font-size: 2rem !important;
+        letter-spacing: .3rem;
+    }
+
+    .tituloInicio {
+        font-size: 6rem !important;
+        letter-spacing: .2rem;
+    }
+
+    .tituloInicio .tituloPlus {
+        padding: 1rem;
+        letter-spacing: 1rem;
+        font-size: 8rem !important;
+        opacity: .8;
+    }
+
+    .titulo {
+        font-size: 4rem !important;
+        letter-spacing: .2rem;
+    }
+
+    .titulo .tituloPlus {
+        padding: 1rem;
+        letter-spacing: 1rem;
+        font-size: 6rem !important;
+        opacity: .8;
+    }
+
+
 
 }
 

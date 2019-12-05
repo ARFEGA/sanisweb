@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import axios from 'axios';
 import MiAlert from './MiAlert';
+import {Link} from 'react-router-dom';
 
 
 class Contacto extends Component {
@@ -57,7 +58,8 @@ class Contacto extends Component {
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 text-right">
-                                    <a href="index.html">Inicio</a> / Contacto
+                                    <Link to={'/'}>Inicio</Link> /<span className="text-white-50"> Contacto</span>
+                                    
                                 </div>
                             </div>
                         </div>
