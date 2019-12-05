@@ -12,8 +12,8 @@ $texto:#343a40;
 html,
 body {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 //Tipografía
@@ -33,30 +33,72 @@ body {
             rgba(29, 210, 177, 1) 100%) !important;
 }
 
-.seccion-arriba-contacto {
+//CONTACTO
 
-    .eslogan,
-    .esloganSub {
-        background-color: black;
-        animation-delay: slow;
-        animation-name: zoomIn;
 
+@keyframes zoomIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
     }
 }
 
+.ruta {
 
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 1)60%,
+            rgba(29, 210, 177, 1));
+    font-weight: bold;
 
-//CONTACTO
+}
 
-.seccion-arriba-contacto {
+.card {
+    height: 40vh !important;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+}
+
+//Para oscurecer imagen
+.contacto {
     display: flex;
     flex-direction: column;
     background: url("../images/contacto-manos.jpg") no-repeat center bottom;
     background-size: cover;
     background-attachment: fixed;
-    height: 40vh; //100% de la vista
-    transition: all .8s ease;
+    height: 100vh; //100% de la vista
+
+    .seccion-arriba-contacto {
+        height: 20vh;
+
+        .eslogan,
+        .esloganSub {
+            //background-color: black;
+            //animation-delay: slow;
+            animation-duration: 3s;
+            animation-name: zoomIn;
+            font-weight: bold;
+            //transition: all 2s ease;
+            //transition: opacity 500ms ease-in;
+
+        }
+    }
+
+    .formulario {
+        height: 80vh;
+        background: linear-gradient(45deg,
+                rgba(42, 27, 161, .6),
+                rgba(29, 210, 177, .6) 100%) !important;
+    }
 }
+
+
 
 .capa-translucida {
     background: linear-gradient(45deg,

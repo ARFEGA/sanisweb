@@ -33,7 +33,7 @@ const Aparatologia = () => {
                             </h2>
                             <div className="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
-                                    <a href="#">Caracteristicas...</a>
+                                    <a href="#!">Caracteristicas...</a>
                             </div>
                             
                          </div>
@@ -49,7 +49,7 @@ const Aparatologia = () => {
                              </h2>
                              <div class="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
-                                    <a href="#">Caracteristicas...</a>
+                                    <a href="#!">Caracteristicas...</a>
                             </div>
                          </div>
                      </div>
@@ -65,7 +65,7 @@ const Aparatologia = () => {
                              </h2>
                              <div class="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
-                                    <a href="#">Ver horarios</a>
+                                    <a href="#!">Ver horarios</a>
                             </div>
                          </div>
                      </div>
@@ -80,7 +80,7 @@ const Aparatologia = () => {
                              </h2>
                             <div class="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
-                                    <a href="#">¿Como es?</a>
+                                    <a href="#!">¿Como es?</a>
                             </div>
                          </div>
                      </div>
@@ -95,7 +95,7 @@ const Aparatologia = () => {
                              </h2>
                              <div class="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
-                                    <a href="#">Descubrela</a>
+                                    <a href="#!">Descubrela</a>
                             </div>
                          </div>
                      </div>
@@ -110,7 +110,7 @@ const Aparatologia = () => {
                              </h2>
                               <div class="mi-boton w-auto" id="effect-button">
                                     <div id="circle"></div>
-                                    <a href="#">Pies saludables</a>
+                                    <a href="#!">Pies saludables</a>
                             </div>
                             
                         </div>

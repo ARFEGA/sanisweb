@@ -2,8 +2,8 @@
 html,
 body {
   position: relative;
-  height: 100vh;
-  width: 100vw; }
+  height: 100%;
+  width: 100%; }
 
 html {
   font-family: 'Raleway', sans-serif;
@@ -18,15 +18,30 @@ body {
   transition: all .5s ease;
   background: linear-gradient(45deg, #2a1ba1, #1dd2b1 100%) !important; }
 
-.seccion-arriba-contacto .eslogan,
-.seccion-arriba-contacto .esloganSub {
-  background-color: black;
-  -webkit-animation-delay: slow;
-          animation-delay: slow;
-  -webkit-animation-name: zoomIn;
-          animation-name: zoomIn; }
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
 
-.seccion-arriba-contacto {
+@keyframes zoomIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
+.ruta {
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, black), to(#1dd2b1));
+  background: linear-gradient(90deg, black 60%, #1dd2b1);
+  font-weight: bold; }
+
+.card {
+  height: 40vh !important; }
+
+.mapa {
+  width: 100%;
+  height: 100%; }
+
+.contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,9 +52,19 @@ body {
   background: url("../images/contacto-manos.jpg") no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
-  height: 40vh;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease; }
+  height: 100vh; }
+  .contacto .seccion-arriba-contacto {
+    height: 20vh; }
+    .contacto .seccion-arriba-contacto .eslogan,
+    .contacto .seccion-arriba-contacto .esloganSub {
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      -webkit-animation-name: zoomIn;
+              animation-name: zoomIn;
+      font-weight: bold; }
+  .contacto .formulario {
+    height: 80vh;
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%) !important; }
 
 .capa-translucida {
   background: linear-gradient(45deg, rgba(42, 27, 161, 0.4), rgba(29, 210, 177, 0.4) 100%) !important; }

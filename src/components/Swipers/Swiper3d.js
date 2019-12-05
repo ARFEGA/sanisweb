@@ -19,10 +19,10 @@ const Swiper3d = () => {
     return (
         
             <Swiper  {...params}>  
-                <div> <img width="100%" height="100%" src="../images/fondo-slide-1.jpg"/></div>
-                <div> <img width="100%" height="100%"  src="../images/fondo-slide-2.jpg"/></div>
-                <div> <img width="100%" height="100%"  src="../images/fondo-slide-3.jpg"/></div>
-                <div> <img width="100%" height="100%"  src="../images/fondo-slide-1.jpg"/></div>
+                <div> <img width="100%" height="100%" src="../images/fondo-slide-1.jpg" alt=""/></div>
+                <div> <img width="100%" height="100%"  src="../images/fondo-slide-2.jpg" alt=""/></div>
+                <div> <img width="100%" height="100%"  src="../images/fondo-slide-3.jpg" alt=""/></div>
+                <div> <img width="100%" height="100%"  src="../images/fondo-slide-1.jpg" alt=""/></div>
             </Swiper>
     
     )

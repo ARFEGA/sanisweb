@@ -6,7 +6,7 @@ import { firestoreConnect } from 'react-redux-firebase';
 import InfoContacto from './InfoContacto';
 import SocialNetBar from './SocialNetBar';
 import Spinner from './Spinner';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 // 
 class Encabezado extends Component {

@@ -50,7 +50,7 @@ const SwiperClinica = () => {
                               molestiae iste.
                             </h6>
           
-                              <a href="#" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
+                              <a href="#!" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
                            
                          </div>
                      </div>
@@ -73,7 +73,7 @@ const SwiperClinica = () => {
                               molestiae iste.
                             </h6>
           
-                              <a href="#" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
+                              <a href="#!" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
                            
                          </div>
                      </div>
@@ -96,7 +96,7 @@ const SwiperClinica = () => {
                               molestiae iste.
                             </h6>
           
-                              <a href="#" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
+                              <a href="#!" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
                            
                          </div>
                      </div>
@@ -119,7 +119,7 @@ const SwiperClinica = () => {
                               molestiae iste.
                             </h6>
           
-                              <a href="#" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
+                              <a href="#!" className="btn btn-outline-light  text-light  font-weight-bold d-block mt-auto">Reservar cita</a>
                            
                          </div>
                      </div>

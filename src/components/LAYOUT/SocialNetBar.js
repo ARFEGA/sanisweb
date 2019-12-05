@@ -14,7 +14,7 @@ const SocialNetBar = ({infonegocio}) => {
                         <ul className="redes-sociales list-unstyled d-flex justify-content-center mb-0">
                             <li><a href={twitter}><i className="fab fa-twitter"></i></a></li>
                             <li><a href="!#"><i className="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+                            <li><a href="!#"><i className="fab fa-youtube"></i></a></li>
                             <li><a href="www.google.com" target="_blank"><i className="fab fa-google"></i></a></li>
                         </ul>
                     </div>
